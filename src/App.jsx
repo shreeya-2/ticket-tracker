@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.scss';
-import "./data/team";
+import team from "./data/team";
+import background from "./assets/images/abstract-gradient.png";
+import EmployeeCard from "./components/EmployeeCard/EmployeCard";
 
-function App() {
+const App = () => {
+  const createEmployeeCard = team.map((employee) => {
+    return <EmployeeCard name={employee.name} role={employee.role} />
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="app-header"> 
+        <img className="app-header__img" src={background}/>
+        <h1 className="app-heading">Ticket Tracker</h1>
       </header>
+      <section className="app-content">
+        <div> 
+          {createEmployeeCard}
+        </div>
+      </section>    
     </div>
   );
 }
