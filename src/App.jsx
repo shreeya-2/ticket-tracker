@@ -16,7 +16,9 @@ const App = () => {
         <h1 className="app__heading">Welcome,</h1>
         <h2 className="app__subheading"> Lundy Consultancy Team</h2>
       </header> 
-       {createEmployeeCard}   
+      < section className="app__content">
+       {createEmployeeCard} 
+       </section>
     </div>
   );
 }

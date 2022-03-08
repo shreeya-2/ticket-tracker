@@ -7,7 +7,7 @@ const EmployeeCard = (props) => {
     <div className="employee-card">
       <h2 className="employee-card__heading">{props.name} </h2>
       <h3 className="employee-card__heading">{props.role} </h3>
-      <hr></hr>
+      <hr className="employee-card__divider"></hr>
       <Counter />
     </div>
   );

@@ -5,6 +5,7 @@
   width: 200px;
   background-color: white;
   margin: 1.5rem;
+  grid-column-start: 1;
 }
 
 .employee-card__heading {
@@ -12,6 +13,10 @@
   text-align: center;
 }
 
-.hr {
-  border: solid paleturquoise 3px;
+.employee-card__divider {
+  border-style: none;
+  border: solid rgba(57, 178, 248, 0.644) 0.5px;
+  background-color: rgba(117, 188, 255, 0.644);
+  width: 100%;
+  margin: 0;
 }

@@ -9,7 +9,7 @@ background-color: whitesmoke;
   margin: 0;
   padding: 0;
   position: relative;
-  top: -345px;
+  top: -325px;
   background-color: transparent;
 }
 
@@ -25,22 +25,22 @@ background-color: whitesmoke;
   background-color: transparent;
   padding-top: 1rem;
   padding-bottom: 0;
-  
+  line-height: 60%;
 }
 
 .app__subheading {
   color: white;
-  margin: 2rem;
+  margin-left: 2.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   background-color: transparent;
-  padding-top: 0;
-  
+  font-weight: 600;
+  font-size: 2rem;
 }
   
 .app__content {
-  margin: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, );
-  grid-gap: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
