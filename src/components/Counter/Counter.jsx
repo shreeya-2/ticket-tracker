@@ -18,11 +18,13 @@ const Counter = () => {
   };
 
   return (
-    <div className="counter">
+    <div className="counter__container">
       <p className="counter__heading">Completed Tasks</p>
-      <p className="counter__total"> {ticketCounter} </p> 
-      <button className="counter__button" onClick={handleDecrement}>-</button>
-      <button className="counter__button" onClick={handleIncrement}>+</button>
+      <div className="counter">
+        <button className="counter__button" onClick={handleDecrement}>-</button>
+        <p className="counter__total"> {ticketCounter} </p> 
+        <button className="counter__button" onClick={handleIncrement}>+</button>
+      </div>
     </div>
   );
 };

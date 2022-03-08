@@ -1,28 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&family=Noto+Serif+Display:wght@200;300;400&family=Outfit:wght@300&display=swap');
 
 *{
-font-family: 'Josefin Sans', sans-serif;
-background-color: lavender;
+font-family: 'Outfit', sans-serif;
+background-color: whitesmoke;
 }
 
-.app-header__img{
-  height:200px;
-  width: 100%;
-}  
-
-
-.app-heading {
-  font-family: 'Segoe UI' sans-serif;
-  color: black;
+.app__header {
+  margin: 0;
+  padding: 0;
   position: relative;
-  bottom: 0px;
-  left: 0px;
-  z-index: 1;
+  top: -345px;
+  background-color: transparent;
+}
+
+.app__header--img {
+ height: 20rem;
+ width: 100%
+}
+
+.app__heading  {
+  color: white;
   margin: 2rem;
- }
+  font-size: 3rem;
+  background-color: transparent;
+  padding-top: 1rem;
+  padding-bottom: 0;
   
- .app-content {
-   margin: 2rem;
-   display: flex;
-   gap: 1rem;
- }
+}
+
+.app__subheading {
+  color: white;
+  margin: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background-color: transparent;
+  padding-top: 0;
+  
+}
+  
+.app__content {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, );
+  grid-gap: 1rem;
+}

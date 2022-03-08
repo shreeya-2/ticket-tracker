@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.scss';
 import team from "./data/team";
-import background from "./assets/images/abstract-gradient.png";
-import EmployeeCard from "./components/EmployeeCard/EmployeCard";
+import EmployeeCard from "./components/EmployeeCard/EmployeeCard";
+import wave from "./assets/images/wave (3).png";
 
 const App = () => {
   const createEmployeeCard = team.map((employee) => {
@@ -10,16 +10,13 @@ const App = () => {
   });
 
   return (
-    <div className="App">
-      <header className="app-header"> 
-        <img className="app-header__img" src={background} alt=""/>
-        <h1 className="app-heading">Ticket Tracker</h1>
-      </header>
-      <section className="app-content">
-        <div> 
-          {createEmployeeCard}
-        </div>
-      </section>    
+    <div className="app">
+      <img className="app__header--img" src={wave} alt=""/>
+      <header className="app__header">
+        <h1 className="app__heading">Welcome,</h1>
+        <h2 className="app__subheading"> Lundy Consultancy Team</h2>
+      </header> 
+       {createEmployeeCard}   
     </div>
   );
 }
