@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="app-header"> 
-        <img className="app-header__img" src={background}/>
+        <img className="app-header__img" src={background} alt=""/>
         <h1 className="app-heading">Ticket Tracker</h1>
       </header>
       <section className="app-content">

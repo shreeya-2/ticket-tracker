@@ -1,10 +1,12 @@
 .employee-card {
-  border: solid black 2px;
+  border-radius: 16px;
   padding: 1rem;
-  height: 240px;
-  width: 160px;
+  height: 280px;
+  width: 180px;
+  background-color: white;
 }
 
 .employee-card__heading {
   font-family: 'Segoe UI', sans-serif;
+  background-color: white;
 }
