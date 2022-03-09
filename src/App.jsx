@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.scss';
 import team from "./data/team";
-import EmployeeCard from "./components/EmployeeCard/EmployeeCard";
 import wave from "./assets/images/wave (3).png";
+import EmployeeCard from "./components/EmployeeCard/EmployeeCard";
+import Nav from "./components/Nav/Nav"
+
 
 const App = () => {
   const createEmployeeCard = team.map((employee) => {
@@ -13,8 +15,9 @@ const App = () => {
     <div className="app">
       <img className="app__header--img" src={wave} alt=""/>
       <header className="app__header">
+      <Nav />
         <h1 className="app__heading">Welcome,</h1>
-        <h2 className="app__subheading"> Lundy Consultancy Team</h2>
+        <h2 className="app__subheading"> Name</h2>
       </header> 
       < section className="app__content">
        {createEmployeeCard} 
