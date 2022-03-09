@@ -1,0 +1,78 @@
+.user-menu {
+  background-color: #4F95FF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  &__cross {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    height: 2rem;
+    background-color: transparent;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__profile {
+    height: 12rem;
+    background-color: transparent;
+  }
+
+  &__title {
+    color: white;
+    font-size: 40px;
+    background-color: transparent;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    border-style: none;
+
+    &--label {
+      background-color: transparent;
+      color: white;
+      font-size: 30px
+    }
+
+    &--input {
+      border-style: none;
+      height: 2rem;
+      width: 12rem;
+      border-radius: 12px;
+    }
+  }
+   
+  &__button {
+    border-style: none;
+    border-radius: 22px;
+    height: 2.5rem;
+    width: 5rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: white;
+    color: #4F95FF
+
+  }
+}
