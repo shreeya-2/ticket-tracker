@@ -1,20 +1,42 @@
-.navbar {
- height: 30px;
+.nav-menu {
  z-index: 2;
  display: flex;
  justify-content: space-between;
  margin:3rem;
- background-color: transparent;
  position: relative;
- top:40px;
+ top:-380px;
 
- .navbar-logo {
-  height: 38px;
-  background-color: transparent;
- }
+  &__logo {
+    height: 40px;
+  }
 
- .navbar-userMenu{
-  height: 38px;
-  background-color: transparent;
- }
+  &__user {
+    height: 40px;
+  }
 }
+
+.nav-header {
+  position: relative;
+  left: 70px;
+  top:-430px;
+
+  &__greeting  {
+    color: white;
+    margin-left: 4rem;
+    font-size: 3rem; 
+    padding-top: 1rem;
+    padding-bottom: 0;
+    line-height:10%;
+  }
+
+  &__username {
+    color: white;
+    margin-left: 4.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}  
+    
+

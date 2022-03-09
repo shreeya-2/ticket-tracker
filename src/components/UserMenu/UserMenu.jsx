@@ -19,7 +19,7 @@ const UserMenu = ({handleClick, handleSubmit}) => {
           <input type="text" id="first_name" name="first_name" className="user-menu__form--input"/>
           <label for="last_name" className="user-menu__form--label">Last name:</label>
           <input type="text" id="last_name" name="last_name" className="user-menu__form--input"/>
-          <button className="user-menu__button" >Login</button>    
+          <input type="submit" value="login" className="user-menu__button" />    
         </form>
       </div>
     </div>
