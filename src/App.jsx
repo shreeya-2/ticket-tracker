@@ -7,8 +7,8 @@ import Nav from "./components/Nav/Nav";
 
 const App = () => {
   const [user, setUser] = useState({
-    firstName: "Alima",
-    lastName: "Miller",
+    firstName: "Lundy",
+    lastName: "Consultancy Team",
   });
 
   const createEmployeeCard = team.map((employee) => {
@@ -16,7 +16,9 @@ const App = () => {
       <EmployeeCard
         name={employee.name}
         role={employee.role}
-        isActive={`${user.firstName} ${user.lastName}` === employee.name}
+        isActive={
+          `${user.firstName} ${user.lastName}` === employee.name.toLowerCase()
+        }
       />
     );
   });
@@ -24,7 +26,7 @@ const App = () => {
   return (
     <div className="app">
       <img className="app__header--img" src={wave} alt="" />
-      <Nav user={user} />
+      <Nav user={user} setUser={setUser} />
       <section className="app__content">{createEmployeeCard}</section>
     </div>
   );

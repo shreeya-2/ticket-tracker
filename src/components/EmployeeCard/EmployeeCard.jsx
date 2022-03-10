@@ -8,7 +8,7 @@ const EmployeeCard = (props) => {
   let cardText = `${name}`;
 
   if (isActive === true) {
-    cardText = `${name} - this is you!`;
+    cardText = `${name} 👋`;
   }
 
   return (

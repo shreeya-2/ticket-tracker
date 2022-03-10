@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Nav.scss";
 import UserMenu from "../UserMenu/UserMenu";
 
-const Nav = ({ handleClick, user }) => {
+const Nav = ({ handleClick, user, setUser }) => {
   const [showUserMenu, setShowUserMenu] = useState(false);
 
   const handleUserClick = () => {
@@ -11,13 +11,12 @@ const Nav = ({ handleClick, user }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const firstName = event.target[0].value;
-    const lastName = event.target[1].value;
-    console.log(firstName, lastName);
-    // setUser({
-    //   firstName: firstName,
-    //   lastName: lastName,
-    // });
+    const firstName = event.target[0].value.toLowerCase();
+    const lastName = event.target[1].value.toLowerCase();
+    setUser({
+      firstName: firstName,
+      lastName: lastName,
+    });
   };
 
   return (
@@ -43,7 +42,7 @@ const Nav = ({ handleClick, user }) => {
 
       <div className="nav-header">
         <h1 className="nav-header__greeting">Welcome,</h1>
-        <h2 className="nav-header__username">
+        <h2 className="nav-header__username" handleSubmit={handleSubmit}>
           {user.firstName} {user.lastName}
         </h2>
       </div>
