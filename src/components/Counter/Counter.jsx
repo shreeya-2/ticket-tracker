@@ -1,5 +1,5 @@
 import React from "react";
-import "./Counter.scss"
+import "./Counter.scss";
 import { useState } from "react";
 
 const Counter = () => {
@@ -8,7 +8,7 @@ const Counter = () => {
   // take away from the counter
   const handleDecrement = () => {
     if (Counter > 0) {
-     setCounter(Counter - 1);
+      setCounter(Counter - 1);
     }
   };
 
@@ -19,11 +19,15 @@ const Counter = () => {
 
   return (
     <div className="counter__container">
-      <p className="counter__heading">Completed Tasks</p>
+      <p className="counter__heading">Completed Tickets</p>
       <div className="counter">
-        <button className="counter__button" onClick={handleDecrement}>-</button>
-        <p className="counter__total"> {Counter} </p> 
-        <button className="counter__button" onClick={handleIncrement}>+</button>
+        <button className="counter__button" onClick={handleDecrement}>
+          -
+        </button>
+        <p className="counter__total"> {Counter} </p>
+        <button className="counter__button" onClick={handleIncrement}>
+          +
+        </button>
       </div>
     </div>
   );
