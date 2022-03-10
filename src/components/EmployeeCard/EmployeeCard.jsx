@@ -1,12 +1,20 @@
 import React from "react";
-import "./EmployeeCard.scss"
+import "./EmployeeCard.scss";
 import Counter from "../../components/Counter/Counter";
 
 const EmployeeCard = (props) => {
+  const { name, isActive, role } = props;
+
+  let cardText = `${name}`;
+
+  if (isActive === true) {
+    cardText = `${name} - this is you!`;
+  }
+
   return (
     <div className="employee-card">
-      <h2 className="employee-card__heading">{props.name} </h2>
-      <h3 className="employee-card__heading">{props.role} </h3>
+      <h2 className="employee-card__heading"> {cardText} </h2>
+      <h3 className="employee-card__heading">{role} </h3>
       <hr className="employee-card__divider"></hr>
       <Counter />
     </div>

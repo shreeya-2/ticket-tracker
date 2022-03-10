@@ -1,15 +1,9 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Nav.scss";
 import UserMenu from "../UserMenu/UserMenu";
 
-const Nav= ({handleClick}) => {
+const Nav = ({ handleClick, user }) => {
   const [showUserMenu, setShowUserMenu] = useState(false);
-  const [user, setUser]  = useState({
-    firstName: "John",
-    lastName: "Doe",
-  });
-
-  console.log(user)
 
   const handleUserClick = () => {
     setShowUserMenu(!showUserMenu);
@@ -20,36 +14,41 @@ const Nav= ({handleClick}) => {
     const firstName = event.target[0].value;
     const lastName = event.target[1].value;
     console.log(firstName, lastName);
-    setUser({
-      firstName: firstName,
-      lastName: lastName,
-    });  
+    // setUser({
+    //   firstName: firstName,
+    //   lastName: lastName,
+    // });
   };
-
 
   return (
     <div className="nav">
       <div className="nav-menu">
-        <img className="nav-menu__logo" src = "https://api.iconify.design/emojione-monotone/letter-n.svg?color=white" alt="logo"/>
-        
+        <img
+          className="nav-menu__logo"
+          src="https://api.iconify.design/emojione-monotone/letter-n.svg?color=white"
+          alt="logo"
+        />
+
         {showUserMenu && (
-          <UserMenu handleClick={handleUserClick} handleSubmit={handleSubmit}/>
+          <UserMenu handleClick={handleUserClick} handleSubmit={handleSubmit} />
         )}
 
-        <img 
-          className = "nav-menu__user" 
+        <img
+          className="nav-menu__user"
           onClick={handleUserClick}
-          src = "https://api.iconify.design/bxs/user-circle.svg?color=white"
-          alt="user login" 
+          src="https://api.iconify.design/bxs/user-circle.svg?color=white"
+          alt="user login"
         />
       </div>
 
-      <div className="nav-header"> 
+      <div className="nav-header">
         <h1 className="nav-header__greeting">Welcome,</h1>
-        <h2 className="nav-header__username"> {user.firstName} {user.lastName} </h2>
+        <h2 className="nav-header__username">
+          {user.firstName} {user.lastName}
+        </h2>
       </div>
     </div>
   );
-};    
+};
 
-export default Nav; 
+export default Nav;
