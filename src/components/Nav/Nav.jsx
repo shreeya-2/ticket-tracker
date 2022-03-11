@@ -17,6 +17,7 @@ const Nav = ({ handleClick, user, setUser }) => {
       firstName: firstName,
       lastName: lastName,
     });
+    setShowUserMenu(!showUserMenu);
   };
 
   return (
