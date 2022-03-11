@@ -5,19 +5,19 @@
   width: 200px;
   background-color: white;
   margin: 1.5rem;
-}
 
-.employee-card__heading {
-  background-color: white;
-  text-align: center;
-  height: 3rem;
-  line-height: 125%;
-}
+  &__heading {
+    background-color: white;
+    text-align: center;
+    height: 3rem;
+    line-height: 125%;
+  }
 
-.employee-card__divider {
-  border-style: none;
-  border: solid rgba(57, 178, 248, 0.644) 0.5px;
-  background-color: rgba(117, 188, 255, 0.644);
-  width: 100%;
-  margin: 0rem;
+  &__divider {
+    border-style: none;
+    border: solid rgba(57, 178, 248, 0.644) 0.5px;
+    background-color: rgba(117, 188, 255, 0.644);
+    width: 100%;
+    margin: 0rem;
+  }
 }

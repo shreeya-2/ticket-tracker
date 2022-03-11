@@ -1,35 +1,41 @@
-.counter__container {
-  background-color: white;
-  align-items: center;
-  padding: 1rem;
-}
-
-.counter__heading {
-  background-color: white ;
-  text-align: center;
-  font-size: large;
-}
-
 .counter {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: white;
 
-}
+  &__container {
+    background-color: white;
+    align-items: center;
+    padding: 1rem;
+  }
 
-.counter__total {
-  background-color: white;
-  font-size: large;
-}
+  &__heading {
+    background-color: white;
+    text-align: center;
+    font-size: large;
+  }
 
-.counter__button {
-  border-radius: 20px;
-  border-style: none;
-  height: 2.5rem;
-  width: 2.5rem;
-  align-content: center;
-  margin: 0.2rem;
-  font-size: medium;
-  background-color: paleturquoise;
+  &__total {
+    background-color: white;
+    font-size: large;
+  }
+
+  &__button {
+    border-radius: 20px;
+    border-style: none;
+    height: 2.5rem;
+    width: 2.5rem;
+    align-content: center;
+    margin: 0.2rem;
+    font-size: medium;
+    background-color: paleturquoise;
+  }
+
+  &__reset {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    font-size: small;
+  }
 }
